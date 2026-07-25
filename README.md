@@ -15,7 +15,7 @@ As required by the activity guidelines, the group coordinated its approach direc
 
 ### Step A: Proposal Selection
 * **Date:** July 22, 2026
-* **Participant:** Luis Gabriel Alba García
+* **Participant:** Luis Gabriel Alba García / Juliana Rodriguez Orduz
 * **Proposal Summary:** Proposed utilizing the IoT-23 dataset due to its open-source nature, availability of real network traffic captures (`conn.log`), and its precise labeling for IoT cybersecurity problems (specifically focusing on DDoS attack flows).
 * **Team Consensus:** Juliana Rodriguez Orduz reviewed and approved the proposal in the forum, agreeing that the dataset provides robust categorical and numerical features (duration, bytes sent/received, protocol, and connection states) ideal for Pandas and Matplotlib descriptive analysis.
 
@@ -30,8 +30,8 @@ The team agreed in the collaborative forum to distribute the workload as follows
 
 ## 3. Repository Contents
 
-* `fase4-data-analytics-iot.ipynb` : El cuaderno completo de Google Colab que incluye todo el flujo del proyecto:
-  * **Carga y Limpieza:** Procesamiento inicial del archivo de registros y manejo de cabeceras.
-  * **Codificación y Escalado:** Transformación de variables categóricas mediante *One-Hot Encoding* y normalización de características numéricas con `StandardScaler`.
-  * **Train / Test Split:** División automatizada del conjunto de datos en un 80% para entrenamiento y un 20% para pruebas, excluyendo metadatos de texto y direcciones IP para asegurar la compatibilidad matemática.
-  * **Baseline Model Training and Validation:** Entrenamiento de un clasificador robusto (*Random Forest*) y validación de su rendimiento mediante métricas de precisión, *recall* y *f1-score* a través de `classification_report`.
+* `fase4-data-analytics-iot.ipynb` : The complete Google Colab notebook containing the entire project workflow:
+  * **Data Loading and Cleaning:** Initial processing of log records and handling of headers.
+  * **Encoding and Scaling:** Transformation of categorical variables using *One-Hot Encoding* and normalization of numerical features with `StandardScaler`.
+  * **Train / Test Split:** Automated splitting of the dataset into 80% for training and 20% for testing, filtering out text metadata and IP addresses to ensure mathematical compatibility.
+  * **Baseline Model Training and Validation:** Training of a robust classifier (*Random Forest*) and performance validation using precision, recall, and f1-score metrics via `classification_report`.
