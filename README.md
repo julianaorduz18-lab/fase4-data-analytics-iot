@@ -29,4 +29,9 @@ The team agreed in the collaborative forum to distribute the workload as follows
 ---
 
 ## 3. Repository Contents
-* `fase4-data-analytics-iot.ipynb`: The complete Google Colab notebook containing data preprocessing, cleaning, exploratory data analysis, and descriptive visualizations.
+
+* `fase4-data-analytics-iot.ipynb` : El cuaderno completo de Google Colab que incluye todo el flujo del proyecto:
+  * **Carga y Limpieza:** Procesamiento inicial del archivo de registros y manejo de cabeceras.
+  * **Codificación y Escalado:** Transformación de variables categóricas mediante *One-Hot Encoding* y normalización de características numéricas con `StandardScaler`.
+  * **Train / Test Split:** División automatizada del conjunto de datos en un 80% para entrenamiento y un 20% para pruebas, excluyendo metadatos de texto y direcciones IP para asegurar la compatibilidad matemática.
+  * **Baseline Model Training and Validation:** Entrenamiento de un clasificador robusto (*Random Forest*) y validación de su rendimiento mediante métricas de precisión, *recall* y *f1-score* a través de `classification_report`.
